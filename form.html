@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Structure</title>
+    </head>
+    <body>
+        <h1>HTML FORMS</h1>
+        <form>
+            <!-- For creating forms in the html -->
+             <label for = "text">Enter Username:</label>
+             <input type = "text" placeholder = "Enter your Name"  value = "priya" disabled id = "username">
+             <br><br>
+             <label for = "sus">Age :</label>
+             <input type =  "number" name = "age" min = "12" max = "78">
+             <br><br>
+             <label for = "dat">DOB:</label>
+             <input type = "date" id = "dat">
+             <br><br>
+             <label for = "email">Enter email:</label>
+             <input type = "email" placeholder = "enter your email" id = "email"><br><Br>
+             <label for = "password" >Enter password</label>
+             <input type  = "password" placeholder = "enter your password :" id = "password">
+             <p>Select your hobby:</p>
+             <input type = "radio" name = "hob" value = "reading books" id = "reading" readonly>
+             <label for = "reading">Reading books</label>
+             <br><Br>
+             <input type  = "radio" name = "hob" value =  "writing" id = "writing">
+             <label for = "writing">writing</label>
+             <br><br>
+             <input type = "radio" name = "hob1" value = "helling" id = "hell">
+             <label for= "hell">helling</label>
+             <br><br>
+             <p>Skills : </p>
+             <input type = "checkbox" id = "java" value = "java">
+             <label for = "java">JAVA</label>
+             <br>
+             <label for = "birth" >Birthday  - time:</label>
+             <input type = "datetime-local" id = "birth" name = "dob">
+             <br>
+             <input type = "checkbox" id = "python" value = "python">
+             <label for = "python">PYTHON</label>
+             <input type = "reset" value = "reset">
+             <br>
+             <label for = "col" >Select your favourite colour :</label>
+             <input type = "color" id = "col" value = "favcolor">
+             <br>
+             <label for = "qns">Security Questions :</label>
+             <select name = "question" id = "qns">
+                <option name = "question 1">
+                    <option>What the hell !</option>
+                </option>
+             </select>
+             <label for ="ans">Question answer:</label>
+             <input type = "text" name =  "ans" id = "ans">
+             <br><br>
+             <input type ="submit" value ="submit">
+
+             <textarea name = "bio" id = "bio" cols = "10" rows = "10" placeholder="Enter your review"></textarea>
+            <fieldset>
+                <legend>AK persona :</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </fieldset>
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+<form>
+    <label for = "" >Age :</label>
+    <input type="number" min="0" max="10" step="2">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+
+
+        <style>
+            #username {
+                background-color: aqua;
+                text-align: center;
+            }
+            #password{
+                background-color: blue;
+                color:black;
+            }
+        </style>
+    </body>
+</html>
